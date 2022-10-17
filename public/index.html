@@ -11,7 +11,7 @@
 
   <div class="container">
 
-    <a id="github" target="blank" href="https://github.com/Neest/rapid_typing">Fork me on github</a>
+    <a id="github" target="blank" href="https://github.com/raviprajapat/rapid_typing">Fork me on github</a>
 
     <div class="topbar">
       <div class="speed-stats">
@@ -42,6 +42,12 @@
         <span>/</span>
         <span class="error-average"></span>
       </div>
+      <div class="typing-type">
+        <select class="typing-selector">
+          <option value="">English</option>
+          <option value="hindi">Hindi</option>
+        </select>
+      </div>
     </div>
 
     <div class="wordline-container">
@@ -67,116 +73,169 @@
 
     <div class="keyboard-container">
       <div class="keyline">
-        <div class="key group-1" id="`">`
+        <div class="key group-1" id="grave">`
           <div class="subkey">~</div>
         </div>
         <div class="key group-1" id="1">1
           <div class="subkey">!</div>
         </div>
         <div class="key group-2" id="2">2
-          <div class="subkey">@</div>
+          <div class="subkey"> <span class="hindikruti">@</span></div>
         </div>
         <div class="key group-3" id="3">3
-          <div class="subkey">#</div>
+          <div class="subkey"> <span class="hindikruti">#</span></div>
         </div>
         <div class="key group-4" id="4">4
-          <div class="subkey">$</div>
+          <div class="subkey"> <span class="hindikruti">$</span></div>
         </div>
         <div class="key group-4" id="5">5
-          <div class="subkey">%</div>
+          <div class="subkey"> <span class="hindikruti">%</span></div>
         </div>
         <div class="key group-5" id="6">6
-          <div class="subkey">^</div>
+          <div class="subkey"> <span class="hindikruti">^</span></div>
         </div>
         <div class="key group-5" id="7">7
-          <div class="subkey">&</div>
+          <div class="subkey"> <span class="hindikruti">&amp;</span></div>
         </div>
         <div class="key group-6" id="8">8
-          <div class="subkey">*</div>
+          <div class="subkey"> <span class="hindikruti">*</span></div>
         </div>
         <div class="key group-7" id="9">9
-          <div class="subkey">(</div>
+          <div class="subkey"> <span class="hindikruti">(</span></div>
         </div>
         <div class="key group-8" id="0">0
-          <div class="subkey">)</div>
+          <div class="subkey"> <span class="hindikruti">)</span></div>
         </div>
-        <div class="key group-8" id="underscore">_
-          <div class="subkey">-</div>
+        <div class="key group-8" id="dash">- <span class="hindikruti">-</span>
+          <div class="subkey"><span class="hindikruti">_</span></div>
         </div>
-        <div class="key group-8" id="equal">=
-          <div class="subkey">+</div>
+        <div class="key group-8" id="equal">=<span class="hindikruti">=</span>
+          <div class="subkey">़<span class="hindikruti">+</span></div>
         </div>
         <div class="key non-group" id="backspace">backspace</div>
       </div>
       <div class="keyline">
         <div class="key non-group" id="tab">tab</div>
-        <div class="key group-1" id="q">q</div>
-        <div class="key group-2" id="w">w</div>
-        <div class="key group-3" id="e">e</div>
-        <div class="key group-4" id="r">r</div>
-        <div class="key group-4" id="t">t</div>
-        <div class="key group-5" id="y">y</div>
-        <div class="key group-5" id="u">u</div>
-        <div class="key group-6" id="i">i</div>
-        <div class="key group-7" id="o">o</div>
-        <div class="key group-8" id="p">p</div>
-        <div class="key group-8" id="[">[
-          <div class="subkey">{</div>
+        <div class="key group-1" id="q">q &nbsp; <span class="hindikruti">q</span>
+          <div class="subkey hindikruti">Q</div>
         </div>
-        <div class="key group-8" id="]">]
-          <div class="subkey">}</div>
+        <div class="key group-2" id="w">w &nbsp; <span class="hindikruti">w</span>
+          <div class="subkey hindikruti">W</div>
         </div>
-        <div class="key group-8" id="\">\
-          <div class="subkey">|</div>
+        <div class="key group-3" id="e">e &nbsp; <span class="hindikruti">e</span>
+          <div class="subkey hindikruti">E</div>
+        </div>
+        <div class="key group-4" id="r">r &nbsp; <span class="hindikruti">r</span>
+          <div class="subkey hindikruti">R</div>
+        </div>
+        <div class="key group-4" id="t">t &nbsp; <span class="hindikruti">t</span>
+          <div class="subkey hindikruti">T</div>
+        </div>
+        <div class="key group-5" id="y">y &nbsp; <span class="hindikruti">y</span>
+          <div class="subkey hindikruti">Y</div>
+        </div>
+        <div class="key group-5" id="u">u &nbsp; <span class="hindikruti">u</span>
+          <div class="subkey hindikruti">U</div>
+        </div>
+        <div class="key group-6" id="i">i &nbsp; <span class="hindikruti">i</span>
+          <div class="subkey hindikruti">I</div>
+        </div>
+        <div class="key group-7" id="o">o &nbsp; <span class="hindikruti">o</span>
+          <div class="subkey hindikruti">O</div>
+        </div>
+        <div class="key group-8" id="p">p &nbsp; <span class="hindikruti">p</span>
+          <div class="subkey hindikruti">P</div>
+        </div>
+        <div class="key group-8" id="openSquareBracket">[   &nbsp;<span class="hindikruti">[</span>
+          <div class="subkey"> <span class="hindikruti">{</span></div>
+        </div>
+        <div class="key group-8" id="closeSquareBracket">]  &nbsp; <span class="hindikruti">]</span>
+          <div class="subkey"> <span class="hindikruti">}</span></div>
+        </div>
+        <div class="key group-8" id="backSlash">\<span class="hindikruti">\</span>
+          <div class="subkey"><span class="hindikruti">|</span></div>
         </div>
       </div>
       <div class="keyline">
         <div class="key non-group" id="caps_lock">Caps Lock</div>
-        <div class="key group-1" id="a">a</div>
-        <div class="key group-2" id="s">s</div>
-        <div class="key group-3" id="d">d</div>
-        <div class="key group-4" id="f">f</div>
-        <div class="key group-4" id="g">g</div>
-        <div class="key group-5" id="h">h</div>
-        <div class="key group-5" id="j">j</div>
-        <div class="key group-6" id="k">k</div>
-        <div class="key group-7" id="l">l</div>
-        <div class="key group-8" id=";">;
-          <div class="subkey">:</div>
+        <div class="key group-1" id="a">a &nbsp; <span class="hindikruti">a</span>
+          <div class="subkey hindikruti text-capitalize">a</div>
         </div>
-        <div class="key group-8" id=""">"
-          <div class="subkey">,</div>
+        <div class="key group-2" id="s">s &nbsp; <span class="hindikruti">s</span>
+          <div class="subkey hindikruti text-capitalize">s</div>
+        </div>
+        <div class="key group-3 key-target" id="d">d &nbsp; <span class="hindikruti">d</span>
+          <div class="subkey hindikruti text-capitalize">d</div>
+        </div>
+        <div class="key group-4" id="f"><span id="f_eng">f</span> &nbsp; <span class="hindikruti">f</span>
+           &nbsp;<div class="subkey hindikruti text-capitalize"> f</div>
+        </div>
+        <div class="key group-4" id="g">g &nbsp; <span class="hindikruti">g</span>
+          <div class="subkey hindikruti text-capitalize">g</div>
+        </div>
+        <div class="key group-5" id="h">h &nbsp; <span class="hindikruti">h</span>
+          <div class="subkey hindikruti text-capitalize">h</div>
+        </div>
+        <div class="key group-5" id="j"><span id="j_eng">j</span> &nbsp; <span class="hindikruti">j</span>
+          <div class="subkey hindikruti text-capitalize">j</div>
+        </div>
+        <div class="key group-6" id="k">k &nbsp; <span class="hindikruti">k</span>
+          <div class="subkey hindikruti text-capitalize">k</div>
+        </div>
+        <div class="key group-7" id="l">l &nbsp; <span class="hindikruti">l</span>
+          <div class="subkey hindikruti text-capitalize">l</div>
+        </div>
+        <div class="key group-8" id="semicolon">;<span class="hindikruti">;</span>
+          <div class="subkey"><span class="hindikruti">:</span></div>
+        </div>
+        <div class="key group-8" id="singleQuote">'  &nbsp;<span class="hindikruti">'</span>
+          <div class="subkey"> <span class="hindikruti">"</span></div>
         </div>
         <div class="key non-group" id="enter">Enter</div>
       </div>
       <div class="keyline">
         <div class="key group-1" id="shift-l">Shift</div>
-        <div class="key group-1" id="z">z</div>
-        <div class="key group-2" id="x">x</div>
-        <div class="key group-3" id="c">c</div>
-        <div class="key group-4" id="v">v</div>
-        <div class="key group-4" id="b">b</div>
-        <div class="key group-5" id="n">n</div>
-        <div class="key group-5" id="m">m</div>
-        <div class="key group-6" id="<"><
-          <div class="subkey">,</div>
+        <div class="key group-1" id="z">z &nbsp; &nbsp; <span class="hindikruti">z</span>
+          <div class="subkey hindikruti text-capitalize">z</div>
         </div>
-        <div class="key group-7" id=">">>
-          <div class="subkey">.</div>
+        <div class="key group-2" id="x">x &nbsp; <span class="hindikruti">x</span>
+          <div class="subkey hindikruti text-capitalize">x</div>
         </div>
-        <div class="key group-8" id="/">/
-          <div class="subkey">?</div>
+        <div class="key group-3" id="c">c &nbsp; <span class="hindikruti">c</span>
+          <div class="subkey hindikruti text-capitalize">c</div>
+        </div>
+        <div class="key group-4" id="v">v &nbsp; <span class="hindikruti">v</span>
+          <div class="subkey hindikruti text-capitalize">v</div>
+        </div>
+        <div class="key group-4" id="b">b &nbsp; <span class="hindikruti">b</span>
+          <div class="subkey hindikruti text-capitalize">b</div>
+        </div>
+        <div class="key group-5" id="n">n &nbsp; <span class="hindikruti">n</span>
+          <div class="subkey hindikruti text-capitalize">n</div>
+        </div>
+        <div class="key group-5" id="m">m &nbsp; <span class="hindikruti">m</span>
+          <div class="subkey hindikruti text-capitalize">m</div>
+        </div>
+        <div class="key group-6" id="comma">,<span class="hindikruti">,</span>
+          <div class="subkey"> <span class="hindikruti">&lt;</span></div>
+        </div>
+        <div class="key group-7" id="fullStop">.<span class="hindikruti">.</span>
+          <div class="subkey"> <span class="hindikruti">&gt;</span></div>
+        </div>
+        <div class="key group-8" id="forwardSlash">/<span class="hindikruti">/</span>
+          <div class="subkey"> <span class="hindikruti">?</span></div>
         </div>
         <div class="key group-8" id="shift-r">shift</div>
       </div>
       <div class="keyline">
-        <div class="key" id="space"></div>
+        <div class="key" id="space">space bar</div>
       </div>
     </div>
   </div>
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="js/utils/words.js"></script>
+  <script src="js/utils/words-hindi.js"></script>
   <script src="build/build.js"></script>
 </body>
 </html>

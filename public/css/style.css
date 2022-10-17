@@ -8,6 +8,12 @@ html, body {
   height: 100%;
 }
 
+@font-face {
+  font-family:'HindiFont';
+  font-size: medium;
+  src: url("KRDEV010.TTF")format('truetype');
+}
+
 #github {
   position: absolute;
   left: 0;
@@ -444,4 +450,13 @@ span.untyped.wrong {
   padding: 8px;
   text-align: right;
   justify-content: flex-end;
+}
+
+.use-hindi{
+  font-family: "HindiFont";
+}
+.hindikruti{
+  font-family: "HindiFont"!important;
+  font-weight: bold;
+  font-size: 18px!important;
 }

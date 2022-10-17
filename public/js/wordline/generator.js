@@ -17,8 +17,10 @@ export default class Generator {
   _update() {
     let output = [];
 
-    for(let i = 0; i < this.number; i++)
-      output.push(words[this._rand(0, words.length-1)])
+    for(let i = 0; i < this.number; i++){
+      var _words= wordType && wordType=="hindi"?wordshindi:words;
+      output.push(_words[this._rand(0, _words.length-1)])
+    }
     
     return output;
   }
@@ -43,8 +45,8 @@ export default class Generator {
 
   getOne() {
     let output = [];
-
-    let word = words[this._rand(0, words.length)];
+    var _words= wordType && wordType=="hindi"?wordshindi:words;
+    let word = _words[this._rand(0, _words.length)];
 
     for(let i = 0; i < this.number; i++)
       output.push(word);
